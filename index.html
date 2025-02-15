@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruchi Teasty Orders</title>
+    <link rel="stylesheet" href="food.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Foodie</h1>
+        </div>
+        <nav>
+            <ul>Home
+            
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="C:\Users\vemul\OneDrive\Pictures\Screenshots 1\Screenshot 2024-11-06 130059.png" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>550\-</p><p>Hot and spicy  mushroom pizza u will definatly enjoy</p>
+                <button onclick="addToCart('Pizza', 450)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\vemul\OneDrive\Pictures\Screenshots 1\Screenshot 2024-11-06 130155.png" alt="Burger">
+                <h3>Burger</h3>
+                <p>290\-</p><p>Hot and spicy meat Burger u will definatly enjoy</p>
+                <button onclick="addToCart('Burger', 210)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\vemul\OneDrive\Pictures\Screenshots 1\Screenshot 2024-11-06 130245.png" alt="KFC">
+                <h3>KFC</h3>
+                <p>650\-</p><p>Hot and spicy with crispy KFC  u will definatly enjoy</p>
+                <button onclick="addToCart('KFC', 650)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\vemul\OneDrive\Pictures\Screenshots 1\Screenshot 2024-11-06 142722.png" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>280\-</p><p>Hot and spicy  thick pasta  u will definatly enjoy</p>
+                <button onclick="addToCart('Pasta',250)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\vemul\OneDrive\Pictures\Screenshots 1\Screenshot 2024-11-06 130533.png" alt="veg Shawarma">
+                <h3> Veg Shawarma</h3>
+                <p>300\-</p><p>Hot and spicy veg Shavarma included all vegitables u will definatly enjoy</p>
+                <button onclick="addToCart('Veg Shawarma',280)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\vemul\OneDrive\Pictures\Screenshots 1\Screenshot 2024-11-06 130342.png" alt="chicken Shawarma">
+                <h3>Chicken Shawarma</h3>
+                <p>420\-</p>
+                <button onclick="addToCart('Chicken Shawarma',420)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\vemul\OneDrive\Pictures\Screenshots 1\Screenshot 2024-11-06 130857.png" alt="chicken kabab">
+                <h3>Chicken kabab</h3>
+                <p>360\-</p>
+                <button onclick="addToCart('Chicken kabab',360)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\vemul\OneDrive\Pictures\Screenshots 1\Screenshot 2024-11-06 130648.png" alt="chicken 65">
+                <h3>Chicken 65</h3>
+                <p>380\-</p>
+                <button onclick="addToCart('Chicken 65',360)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\vemul\OneDrive\Pictures\Screenshots 1\Screenshot 2024-11-06 142549.png" alt="kadai Mutton">
+                <h3>Kadai Mutton</h3>
+                <p>760\-</p>
+                <button onclick="addToCart('kadai Mutton',360)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="C:\Users\vemul\OneDrive\Pictures\Screenshots 1\Screenshot 2024-11-06 142512.png" alt="Non veg Thali">
+                <h3>Non Veg Thali</h3>
+                <p>1999\-</p>
+                <button onclick="addToCart('Non veg Thali',1999)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-list">
+            <!-- Cart items will appear here -->
+        </ul>
+        <div id="total">
+            Total: <span id="total-price">0</span>
+        </div>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <!-- Footer Section -->
+    
+        <p>Contact us: ruchiteasty@foodie.com</p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
